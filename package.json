@@ -1,0 +1,22 @@
+{
+  "name": "techsperience-oek",
+  "version": "1.0.0",
+  "description": "Prototype for OEK",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blerimberisha/techsperience-oek.git"
+  },
+  "author": "Blerim Berisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blerimberisha/techsperience-oek/issues"
+  },
+  "homepage": "https://github.com/blerimberisha/techsperience-oek#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
