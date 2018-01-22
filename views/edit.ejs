@@ -1,0 +1,49 @@
+<% include partials/header1 %>
+
+
+<div>
+
+<center>
+
+<h1><br>
+	
+		<br> Edit User's Data  </h1><br><br><br><br><br><br><br>
+		
+
+		<table style="width: 500px; height: 100;">
+			<form method="POST" action="/table/update/<%= doc._id %>">
+				<tr>
+				<td>First name:<br>
+				<input type="text" value="<%= doc.firstname %>" name="firstname" ><br></td>
+				<td>Last name:<br>
+				<input type="text" value="<%= doc.lastname %>" name="lastname" ><br></td>
+				</tr>
+				<div  id="special">
+				<tr>
+				<td colspan="2" >Gender : Male<input type="radio" name="gender" value="Male">       Female<input type="radio" name="gender" value="Female">      Other<input type="radio" name="gender" value="Other"><br><br></td>
+				</tr>
+				<tr>
+				<td colspan="2"><br>Birthday : <input type="date" value="<%= doc.date %>" name="date"><br><br></td>
+				</tr>
+				</div>
+				<tr>
+				<td>Email:<br> <input type="email" value="<%= doc.email %>" name="email" > <br></td>
+				<td>Password :<br> <input type="password" value="<%= doc.pass %>" name="pass"><br></td>
+				</tr>
+				<tr>
+				<td><br>Education :<br>  <input type="text" value="<%= doc.education %>" name="education"><br></td>
+				<td><br>Interested fields (optional) :<br> <textarea name="ifields"><%= doc.ifields %></textarea><br></td>
+				</tr>
+				<tr>
+				<td><br><button type="submit">Update</button></td>
+				<td><br><button type="reset">Reset</button></td>
+				</tr>
+				
+				
+				
+		</table	>
+		
+		</center>
+</div>
+		
+<% include partials/footer %>

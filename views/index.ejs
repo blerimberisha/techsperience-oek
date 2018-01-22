@@ -1,0 +1,59 @@
+<% include partials/header %>
+
+
+		<h1 > Register User (Student) Form</h1>
+		
+		
+		
+		<div>
+		
+		<h3><br>
+	
+		<br> Please fill in your information below </h3><br>
+		
+		<center>
+		<table style="width: 500px; height: 100;">
+			<form method="POST" action="/oek/add">
+				<tr>
+				<td>First name:<br>
+				<input type="text" name="firstname" ><br></td>
+				<td>Last name:<br>
+				<input type="text" name="lastname" ><br></td>
+				</tr>
+				<div  id="special">
+				<tr>
+				<td colspan="2" >Gender : Male  <input type="radio" name="gender" value="Male">	Female  <input type="radio" name="gender" value="Female">  Other  <input type="radio" name="gender" value="Other"><br></td>
+				</tr>
+				<tr>
+				<td colspan="2">Birthday : <input type="date" name="date"><br><br></td>
+				</tr>
+				</div>
+				<tr>
+				<td>Email:<br> <input type="email" name="email" > <br></td>
+				<td>Password :<br> <input type="password" name="pass"><br></td>
+				</tr>
+				<tr>
+				<td>Education :<br>  <input type="text" name="education"><br></td>
+				<td>Interested fields (optional) :<br> <textarea name="ifields"></textarea><br></td>
+				</tr>
+				<tr>
+				<td><br><button type="submit">Submit</button></td>
+				<td><br><button type="reset">Reset</button></td>
+				</tr>
+				
+				
+				
+		</table	>
+		
+		<p><br><br><a href="/table">Show Registered Students</a><p>
+		</center>
+		
+		</form>
+		</div>
+		
+		
+		
+		
+
+
+<% include partials/footer %>

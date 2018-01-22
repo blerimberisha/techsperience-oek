@@ -1,0 +1,28 @@
+h1 {
+	background-color: green;
+	text-align: center ;
+	color: white ;
+	margin-top: 0px;
+	padding: 20px;
+	
+}
+div {
+	padding: 15px ;
+	align: center ;
+}
+
+h3 {
+	text-align: center;
+}
+
+td {
+	padding: 10px;
+}
+
+#special{
+	text-align: center ;
+}
+table-cell {
+	padding: 20px;
+	
+}

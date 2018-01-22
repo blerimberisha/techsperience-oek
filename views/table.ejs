@@ -1,0 +1,64 @@
+<% include partials/header2 %>
+
+
+		<h1 > Registered Users </h1>
+		
+		
+		
+		<div>
+		
+		<h3><br>
+	
+		<br> Users Personal Data  </h3><br>
+		
+		<center>
+		<table>
+			
+				<tr>
+				
+				<td style="font-weight:bold" id="thDay">First name:</td>
+				<td style="font-weight:bold" id="thDay1">Last name:</td>
+				<td style="font-weight:bold">Gender:</td>
+				<td style="font-weight:bold " id="thDay2">Birthday:</td>
+				<td style="font-weight:bold">Email:</td>
+				
+				<td style="font-weight:bold">Education:</td>
+				<td style="font-weight:bold " id="thDay3">Interested fields:</td>
+				<td style="font-weight:bold">Options:</td>
+				</tr>
+				
+				
+				<% docs.map(function(doc){ %>
+				<tr>
+				<td><%= doc.firstname %></td>
+				<td><%= doc.lastname %></td>
+				<td><%= doc.gender %></td>
+				<td><%= doc.date %></td>
+				<td><%= doc.email %></td>
+				
+				<td><%= doc.education %></td>
+				<td><%= doc.ifields %></td>
+				<td><a href="/table/edit/<%= doc._id %>">Edit</a><br><br> <a href="/table/delete/<%= doc._id %>">Delete</a></td>
+				</tr>
+	
+				<% }); %>
+				
+				
+		</table	>
+		
+		
+		
+		
+		</center>
+		
+		</form>
+		
+		
+		</div>
+		
+		
+	
+		
+
+
+<% include partials/footer %>
